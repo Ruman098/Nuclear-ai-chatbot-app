@@ -1,0 +1,42 @@
+streamlit
+langchain
+pydantic
+langchain-openai
+langchain-google-genai
+langchain-community
+langchain-ollama
+cohere>=5.2.0
+langchain-cohere>=0.1.4
+faiss-cpu
+tiktoken
+tavily-python
+
+# CRITICAL UPGRADE: Enhanced document processing
+pypdf
+unstructured[local-inference]
+python-docx
+openpyxl
+pandas
+
+# CRITICAL: Advanced PDF processing with structure/table detection
+PyMuPDF  # For better PDF processing, table extraction, and structure preservation
+
+# System utilities
+nest-asyncio
+pathlib2
+typing-extensions
+psutil
+
+# Optional OCR support (lightweight)
+easyocr
+pytesseract
+Pillow
+
+# Text processing
+lxml
+python-magic-bin
+
+# ENHANCEMENT: Additional dependencies for better document understanding
+tabulate        # For better table formatting
+beautifulsoup4  # For HTML content in documents
+markdown        # For markdown processing enhancements
