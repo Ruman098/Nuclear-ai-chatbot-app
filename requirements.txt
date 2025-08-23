@@ -34,9 +34,10 @@ Pillow
 
 # Text processing
 lxml
-python-magic-bin
+python-magic
 
 # ENHANCEMENT: Additional dependencies for better document understanding
 tabulate        # For better table formatting
 beautifulsoup4  # For HTML content in documents
+
 markdown        # For markdown processing enhancements
