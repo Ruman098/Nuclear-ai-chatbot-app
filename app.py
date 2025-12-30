@@ -11,10 +11,10 @@ os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
 import re
 import logging
 from typing import Optional, Dict, Any
-from langchain_core.memory import ConversationBufferWindowMemory
+from langchain_classic.memory import ConversationBufferWindowMemory
 from langchain_core.messages import AIMessage, HumanMessage
 from langchain_core.output_parsers import PydanticOutputParser
-from langchain.output_parsers import OutputFixingParser
+from langchain_classic.output_parsers import OutputFixingParser
 from pydantic import ValidationError
 import traceback
 
@@ -667,3 +667,4 @@ if not st.session_state.pending_approval:
             else:
 
                 st.warning("⚠️ Please upload documents to activate the AI agent.")
+
