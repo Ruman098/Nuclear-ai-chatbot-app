@@ -11,7 +11,7 @@ os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
 import re
 import logging
 from typing import Optional, Dict, Any
-from langchain.memory import ConversationBufferWindowMemory
+from langchain_core.memory import ConversationBufferWindowMemory
 from langchain_core.messages import AIMessage, HumanMessage
 from langchain_core.output_parsers import PydanticOutputParser
 from langchain.output_parsers import OutputFixingParser
@@ -665,4 +665,5 @@ if not st.session_state.pending_approval:
                             # ADDED: Cleanup after each query
                             gc.collect()
             else:
+
                 st.warning("⚠️ Please upload documents to activate the AI agent.")
