@@ -1,9 +1,9 @@
-# ☢️ Nuclear Domain Assistant
+# ☢️ Nuclear Domain Assistant AI Chatbot
 
 A **domain-restricted AI chatbot** built with **Streamlit, LangChain, and Google Gemini**, designed to answer **nuclear engineering and nuclear science–related questions** using **uploaded documents** and **controlled web search**, while strictly avoiding operational or procedural guidance.
 
 🚀 **Live Demo (Streamlit Cloud):**  
-👉 **https://YOUR-STREAMLIT-LINK-HERE**
+👉 **https://nuclear-ai-chatbot-app.streamlit.app/**
 
 ---
 
@@ -35,12 +35,13 @@ The system enforces **strict domain boundaries**, ensuring compliance with safet
 ---
 
 ## 🏗️ Project Structure
+```bash
 ├── app.py                 # Streamlit UI & app orchestration
 ├── agents.py              # ReAct agent, tool logic, safety fallbacks
 ├── utils.py               # Document ingestion, chunking, embeddings
 ├── prompt_template.txt    # System prompt & safety rules
 ├── requirements.txt       # Project dependencies
-
+```
 ---
 
 ## 🧠 How It Works
@@ -91,27 +92,15 @@ cd nuclear-domain-assistant
 ```bash
 streamlit run app.py
 ```
-## 📄 Supported File Types
-- PDF
-- DOCX/DOC
-- XLSX/XLS
-- CSV
-- TXT
-- Markdown(.md)
-### Note: Maximum file size: 25 MB per file
 
 ---
 
 ## Future Improvements
 
 - Role-based access control
-
 - Per-document confidence scoring
-
 - PDF highlight-based citations
-
 - Multi-model support
-
 - Usage analytics dashboard
 
 
