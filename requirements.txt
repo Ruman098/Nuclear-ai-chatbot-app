@@ -3,6 +3,8 @@ langchain
 pydantic
 langchain-openai
 langchain-google-genai
+langchain-classic
+langchain-core
 langchain-community
 langchain-ollama
 cohere>=5.2.0
