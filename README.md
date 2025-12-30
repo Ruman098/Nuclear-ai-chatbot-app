@@ -85,10 +85,14 @@ The system enforces **strict domain boundaries**, ensuring compliance with safet
 
 ### Clone the Repository
 ```bash
-git clone https://github.com/your-username/nuclear-domain-assistant.git
-cd nuclear-domain-assistant
+git clone https://github.com/Ruman098/Nuclear-ai-chatbot-app.git
+cd nuclear-ai-chatbot-app
 ```
 ### Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+### Run the Application
 ```bash
 streamlit run app.py
 ```
