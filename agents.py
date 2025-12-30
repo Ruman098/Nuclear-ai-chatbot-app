@@ -1,15 +1,16 @@
 import os
 import streamlit as st
 import logging
-from langchain.chains import RetrievalQA
-from langchain.agents import tool, AgentExecutor, create_react_agent
-from langchain.prompts import PromptTemplate
-from langchain.retrievers import ContextualCompressionRetriever
-from langchain.retrievers.document_compressors import CohereRerank
+from langchain_classic.chains import RetrievalQA
+from langchain_core.tools import tool
+from langchain_classic.agents import AgentExecutor,create_react_agent
+from langchain_core.prompts import ChatPromptTemplate, PromptTemplate
+from langchain_classic.retrievers import ContextualCompressionRetriever
+from langchain_cohere import CohereRerank 
 from langchain_community.tools.tavily_search import TavilySearchResults
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import PydanticOutputParser, StrOutputParser
-from langchain.output_parsers import OutputFixingParser  # ADD THIS IMPORT
+from langchain_classic.output_parsers import OutputFixingParser  # ADD THIS IMPORT
 from pydantic import BaseModel, Field, ValidationError, field_validator
 from typing import List, Optional, Dict, Any
 import traceback
@@ -174,4 +175,5 @@ def setup_multi_agent_system(
     except Exception as e:
         st.error(f"Failed to initialize AI agent: {str(e)}")
         logger.error(f"Agent initialization error: {str(e)}\n{traceback.format_exc()}")
+
         return None
